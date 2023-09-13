@@ -1,0 +1,390 @@
+body {
+  width: 60%;
+  margin: 0 auto; /* This will center the body content */
+  text-align: center; /* This will center inline and inline-block elements */
+  font-family: Arial, sans-serif; /* fallback to sansserif if needed */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+  body {
+    width: 100%;
+    margin: 0; /* Reset the body margin */
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; /* Negative margins for gutters */
+}
+
+.header__logo {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+
+  width: 30%;
+  height: auto;
+  margin-bottom: 40px;
+  margin-left: 36px;
+  margin-top: 50px;
+}
+
+.photo__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 1280px;
+  max-height: 449px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.mission {
+  margin-bottom: 28px;
+}
+
+.mission__title {
+  font-size: 30px;
+  color: #00945f;
+  margin-bottom: 18px;
+}
+
+.mission__line,
+.benefits__line {
+  height: 2px;
+  background-color: #00945f;
+  width: 73px;
+  margin: 10px auto;
+}
+
+.mission__description {
+  font-size: 16px;
+  color: #999999;
+  margin: 17px 10px;
+  margin-bottom: 24px;
+}
+
+.mission__btn {
+  background-color: #e97300;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.benefits__title {
+  font-size: 30px;
+  color: #00945f;
+  margin-bottom: 18px;
+}
+
+.benefits__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.benefits__content-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+}
+
+.benefits__item {
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: left;
+  margin: 20px;
+  height: 100%;
+  line-height: 1.8;
+}
+
+.benefits__item-title {
+  font-size: 20px;
+  color: #00945f;
+  margin-bottom: 5px;
+}
+
+.benefits__item-description {
+  font-size: 16px;
+  color: #8f8f8f;
+}
+
+.benefits__item-link {
+  position: relative;
+  padding-right: 8px;
+  color: #759b24;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.benefits__item-link::after {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid #759b24;
+  border-top: 1px solid #759b24;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.benefits__divider {
+  width: 2px;
+  background-color: #ebebeb;
+  height: 150px;
+  margin: auto 10px;
+}
+
+.regions {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.regions__title {
+  background-color: #00945f;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.regions__description {
+  background-color: #ebf7f5;
+  padding: 30px 64px 24px 64px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #888;
+  text-align: left;
+}
+.reviewers {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reviewer {
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 84px;
+  color: #666;
+}
+
+.reviewer__image {
+  width: 140px;
+  height: auto;
+}
+
+.reviewer__quote {
+  position: relative; /* For positioning the quote mark */
+  font-style: italic;
+  line-height: 1.4;
+  min-height: 100px;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  font-size: 8rem;
+  opacity: 0.1;
+  z-index: -1;
+  line-height: 0.8;
+}
+
+.reviewer--small {
+  width: 260px;
+}
+
+.reviewer--medium {
+  width: 50%;
+}
+
+.reviewer__details {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping inside this container */
+  flex-direction: column;
+}
+
+.reviewer__name,
+.reviewer__position {
+  white-space: nowrap; /* Prevents wrapping of text within these elements */
+  font-size: 14px;
+  color: #009e77;
+}
+
+.reviewer__name {
+  margin-bottom: 0.4rem;
+}
+
+.full-width-green-line {
+  height: 1px;
+  background-color: #00945f;
+  margin: 20px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+.footer__social-icons {
+  margin-bottom: 10px;
+}
+
+.footer__terms {
+  text-align: left;
+  font-size: 11px;
+}
+
+.inline-link {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.inline-link:hover {
+  text-decoration: none;
+}
+
+.footer__terms,
+.footer__additional-links {
+  margin: 10px 0;
+}
+
+.footer__additional-links a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__additional-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  margin: 0 10px;
+}
+
+.link-item {
+  cursor: pointer;
+  font-size: 14px;
+}
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .header__logo {
+    margin: 24px auto;
+    width: 173px;
+    height: auto;
+  }
+  .photo__image {
+    margin-bottom: 42px;
+  }
+
+  .mission__description {
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  .mission__btn {
+    font-size: 24px;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits__title {
+    max-width: 80%;
+    text-align: center;
+  }
+  .benefits__content-row {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .benefits__item-title {
+    font-size: 24px;
+  }
+
+  .benefits__item-description {
+    font-size: 18px;
+  }
+
+  .benefits__item {
+    padding: 10px 10px;
+  }
+
+  .benefits__item-link {
+    font-size: 18px;
+  }
+
+  .benefits__item-link::after {
+    width: 10px;
+    height: 10px;
+  }
+
+  .benefits__divider {
+    display: none;
+  }
+  .benefits__divider--horizontal {
+    max-width: 768px;
+    width: 90vw;
+    background-color: #ebebeb;
+    height: 2px;
+    margin: 8px 10px;
+  }
+
+  .regions__title {
+    font-size: 24px;
+    padding: 15px 25px;
+  }
+
+  .regions__description {
+    padding: 21px 10px;
+    font-size: 18px;
+  }
+
+  .reviewers {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .reviewer__name,
+  .reviewer__position {
+    font-size: 18px;
+  }
+
+  .reviewer--medium {
+    width: 80%;
+  }
+
+  .full-width-green-line {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .footer__additional-links {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
